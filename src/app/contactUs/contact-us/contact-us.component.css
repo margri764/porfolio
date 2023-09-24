@@ -1,0 +1,255 @@
+
+
+
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+ 
+  .contact{
+    background-image: radial-gradient(circle at 100% 0%, #f08dff 0, #ba77ed 25%, #845ec2 50%, #534596 75%, #2a2f6f 100%);
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .contact h1{
+    color: white;
+  }
+
+
+.container{
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10vw;
+}
+
+.feint{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vw;
+  color: #FF6F91;
+  padding: 30px;
+  line-height: 1em;
+}
+
+.devs{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vw;
+  color: white;
+  padding: 10px;
+  line-height: 1em;
+  margin-right: 2vw;
+}
+
+.text{
+  font-family: 'Poppins';
+  font-size: 3.5vw;
+  color: rgb(24, 24, 24);
+  line-height: 4vw;
+}
+
+.text2{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3vw;
+  color: rgb(24, 24, 24);
+  letter-spacing: 1.5px;
+  text-align: center;
+  line-height: 4vw;
+}
+
+.form{
+ padding: 20px;
+}
+
+.fa-whatsapp{
+  font-size: 6vw;
+  color: black;
+  transition: all 0.3s ease 0s;
+}
+
+.fa-whatsapp:hover{   
+  color: rgb(199, 199, 199);
+  transform: translateY(-7px);
+}
+
+.fa-whatsapp:active{
+  transform: translateY(-1px);
+}
+
+.fa-instagram{
+  font-size: 6vw;
+  color: black;
+  /* color: rgb(175, 110, 6); */
+  transition: all 0.3s ease 0s;
+  }
+
+.fa-instagram:hover{
+  color: rgb(199, 199, 199);
+}
+
+.fa-facebook-f{
+  font-size: 6vw;
+  color: black;
+  /* color:royalblue; */
+  transition: all 0.3s ease 0s;
+}
+
+.fa-facebook-f:hover{
+  color: rgb(199, 199, 199);
+}
+
+.fa-envelope{
+  font-size: 6vw;
+  color: black;
+  /* color: rgb(175, 110, 6); */
+  transition: all 0.3s ease 0s;
+}
+
+.fa-envelope:hover{
+  color: rgb(199, 199, 199);
+}
+
+
+
+
+mat-label{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2vw;
+  color: rgb(24, 24, 24);
+}
+
+mat-form-field{
+  width: 100%;
+}
+ 
+
+
+.btn {
+  padding: 1.3em 3em;
+  font-size: 1vw;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 100;
+  color: rgb(56, 56, 56);
+  background-color: rgb(228, 227, 227);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+ }
+ 
+ .btn:hover {
+  background-color: #FF6F91;
+  box-shadow: 0px 15px 20px rgba(145, 145, 145, 0.4);
+  transform: translateY(-7px);
+ }
+ 
+ .btn:active {
+  color: white;
+  transform: translateY(-1px);
+ }
+
+
+  
+  
+ 
+ 
+
+
+
+/* -----------------------------------------------------@media-------------------------------------------  */
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (max-width: 542px) {
+    
+    
+      .contact{
+
+        height: 30vh;
+      }
+
+      .feint{
+        font-size: 6vw;
+      }
+
+      .devs{
+        font-size: 6vw;
+      }
+
+      .text{
+        font-size: 7vw;
+      }
+
+      .text2{
+        font-size: 6vw;
+        line-height: 1.3em;
+      }
+
+
+      .fa-whatsapp{
+        font-size: 15vw;
+      }      
+      .fa-instagram{
+        font-size: 15vw;
+       }
+          
+      
+      .fa-facebook-f{
+        font-size: 15vw;
+      }
+
+      .fa-envelope{
+        font-size: 15vw;
+      }
+      
+      mat-label{
+        font-size: 6vw;  
+      }
+
+      .btn {
+        padding: 1.3em 3em;
+        font-size: 2vw;
+      }
+       
+    }  
+       
+     
+    
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+
+   
+    @media only screen and (min-width: 543px) and (max-width: 768px){
+    
+
+      
+       
+    }  
+       
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 769px) and (max-width: 1280px) {
+       
+   
+
+    
+
+      
+    
+    }
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1281px) {
+
+      mat-label{
+        font-size: 1.7vw;
+  
+      }
+   
+
+        
+     
+       
+    }

@@ -1,0 +1,111 @@
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 10px;
+    line-height: 4vw;
+}
+
+.text2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-stretch: expanded;
+    font-size: 2vw;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 10px;
+    line-height: 4vw;
+}
+
+
+
+mat-card-title{
+    font-family: 'Poppins', 'sans-serif'; 
+    font-size: 2.3vw;
+}
+mat-card-content p{
+    font-family: 'Nunito Sans', 'sans-serif'; 
+    font-size: 2vw;
+    line-height: 4vw;
+   }
+
+#mongo{
+    width: 20vw;
+}
+#angular{
+    width: 20vw;
+}
+#node{
+    width: 20vw;
+}
+
+.grayScaleImg{
+    filter: grayscale(100%);
+}
+ 
+@media only screen and (max-width: 573px){  
+
+    .text{
+         font-size: 4.5vw;
+         line-height: 6vw;
+    }
+
+    .text2{
+        font-size: 4.5vw;
+        line-height: 6vw;
+   }
+
+   mat-card-title {
+       font-size: 5vw;
+       text-align: center;
+   }
+
+   mat-card-content p{
+        font-size: 6vw;
+        line-height: 10vw;
+   }
+
+    #mongo{
+        width: 30vw;
+    }
+    #angular{
+        width: 30vw;
+    }
+    #node{
+        width: 30vw;
+    }
+   
+}
+
+@media only screen and (min-width: 574px)and (max-width: 767px){
+
+}
+
+@media only screen and (min-width: 768px)and (max-width: 1280px) {
+
+    #mongo{
+        width: 18vw;
+    }
+    #angular{
+        width: 18vw;
+    }
+    #node{
+        width: 18vw;
+    }
+
+}
+
+@media only screen and (min-width: 1281px) {
+    
+    #mongo{
+        width: 15vw;
+    }
+    #angular{
+        width: 15vw;
+    }
+    #node{
+        width: 15vw;
+    }
+
+}

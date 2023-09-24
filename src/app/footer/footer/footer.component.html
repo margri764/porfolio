@@ -1,0 +1,77 @@
+
+ 
+  
+  
+  <div class="footer"  >
+        
+    <br><br>
+    
+    <div fxLayout="row"  >
+        <div fxFlex="100" fxLayoutAlign="start" style="margin-right: 20px;">
+            <span class="feint">Feint</span><span class="devs">dEvs</span> 
+        </div>    
+    </div>
+
+
+   
+
+
+        <div class="cardsFooter" fxLayout="row wrap" fxLayoutGap=""  >
+
+            <div fxFlex="50" fxLayoutAlign=" space-between center"  >    
+                <mat-card class="mat-elevation-z0" > 
+                    
+                    
+                    <mat-card-content >
+                        
+                        <p><a routerLink="/contact-us">Contanos tu proyecto!!</a></p>
+                        <p ><a href="https://goo.gl/maps/3fDrcSniMPY9TkQE9" target="blank">Ubicacion</a></p>
+                        <p > <a (mouseover)="isHover()" (mouseout)="isHover()"  style="cursor: pointer;" >Redes Sociales</a></p>
+
+                   
+
+                        <div fxLayoutAlign="start center" [ngClass]="isHovering === true ? 'animate__animated animate__fadeIn':'devs'">
+                            
+                            <a  href="https://wa.me/+54230269019?text=Hola!!%20" target="blank" > 
+                            <i class="fab fa-whatsapp" ></i></a>
+                             
+                            <a target="_blank" title="Instagram" href="https://www.instagram.com/?hl=es">
+                            <span id="instagram"><i class="fab fa-instagram"></i></span>
+                            </a>
+
+                            <a target="_blank" title="Facebook" href="https://www.facebook.com/people/FeintdEvs/100075386195305">
+                                <span id="facebook"><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                      </div> 
+                        <br>
+                      <div class="fb-like"  data-href="https://www.facebook.com/people/FeintdEvs/100075386195305/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+        
+                
+                     
+
+                    </mat-card-content>
+                </mat-card>        
+            </div>
+
+            <div fxFlex="50" fxLayoutAlign="center center"  >    
+           
+                    
+                    <img fxFlex="50" src="../../../assets/logo.png" alt="" >
+           
+
+
+               
+            </div>
+       
+
+            
+        </div>
+
+        <div fxLayout="row" class="copyrigth" >
+            <div fxFlex="100" fxLayoutAlign="center" >
+                 
+                 <span id="devs">Made by</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="material-icons">copyright</span> &nbsp;&nbsp; <span id="feint">Feint</span><span id="devs">dEvs 2019</span>
+            </div>    
+        </div>
+
+</div>

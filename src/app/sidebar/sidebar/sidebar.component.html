@@ -1,0 +1,30 @@
+
+ 
+ <mat-toolbar class="toolbar animate__animated animate__fadeInDown">
+
+ 
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="showToolbar()">
+    <mat-icon  class="material-icons" style="transform: scale(2.);">navigate_before</mat-icon>
+  </button>
+
+
+  <button mat-icon-button  (click)="goToUrl('whatsapp')" aria-label="Example icon-button with heart icon">
+    <mat-icon >whatsapp</mat-icon>
+  </button>
+
+  <button mat-icon-button (click)="goToUrl('gps')"class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share_location</mat-icon>
+  </button>
+
+
+  <button mat-icon-button href="https://wa.me/+542302416035?text=Hola!!%20" target="blank" (click)="goToUrl('cel')" class="example-icon" aria-label="Example icon-button with share icon">
+    <i class="fab fa-whatsapp " ></i>
+  </button>
+
+  <button mat-icon-button (click)="goToUrl('email')" class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>email</mat-icon>
+  </button>
+
+</mat-toolbar>
+

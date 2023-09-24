@@ -1,0 +1,133 @@
+
+
+
+<div class="container animate__animated animate__fadeIn" >
+
+  <div class="contact" fxLayout="column">
+
+   
+
+    <div class="feint animate__animated animate__backInLeft"  >
+         <span >Feint</span><span class="devs">dEvs</span> 
+    </div>
+
+    <div fxLayoutAlign="center center" fxFlex="100" >
+       <h1  class="text animate__animated animate__fadeIn">¡Dejanos tu mensaje!</h1>
+    </div> 
+
+</div>
+
+  <br> <br> <br>
+  <div fxLayout="column" fxLayoutAlign="start center">
+
+    <div >
+      <p class="text2">Elegi el medio que quieras y nos pondremos en contacto
+      </p>
+  </div>
+ </div>
+
+ <br><br>
+
+ <div fxLayoutAlign="space-evenly center">
+
+  <a  href="https://wa.me/+542302416035?text=Hola!!%20" target="blank"> 
+  <i class="fab fa-whatsapp animate__animated animate__backInLeft"></i>
+  </a>
+   
+  <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+  <span id="instagram">
+    <i class="fab fa-instagram animate__animated animate__backInUp"></i></span>
+  </a>
+
+  <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+      <span id="instagram">
+        <i class="fab fa-facebook-f animate__animated animate__backInDown"></i></span>
+  </a>
+
+  <a target="_blank" title="Instagram" href="">
+    <span id="instagram">
+    <i class="fas fa-envelope animate__animated animate__backInRight"></i></span>
+ </a>
+</div> 
+
+      
+<div fxLayout="row" fxLayout.xs="column" style="margin-top: 10vw;" >		
+
+
+
+  <div  fxFlex="50"  style="">
+
+    <div class="form" fxLayout="column"  fxLayoutAlign="start">
+
+      <div class="text2">Llena el formulario y pronto nos comunicaremos.. </div>
+
+  
+ 
+      <div  fxLayoutAlign="center center" style="margin-top: 30px;">
+      <mat-spinner *ngIf="showSpinner" ></mat-spinner>
+     </div>
+     
+    <div *ngIf="!showSpinner" >
+      
+    <form  [formGroup]="myForm" (ngSubmit)="sendForm()" id="form" >     
+
+      <mat-form-field appearance="outline"> 
+          <mat-label>nombre</mat-label>
+          <input matInput type="text" required formControlName="name">
+      </mat-form-field> 
+      <mat-error  *ngIf ="validField ('name')">
+        completa este dato
+        </mat-error> 
+        <br>     
+
+      <mat-form-field appearance="outline">		
+          <mat-label >email</mat-label>
+          <input matInput type="email" required formControlName="email">
+      </mat-form-field> 
+      <mat-error  *ngIf ="validField ('email')">
+        completa este dato / no es un formato de email valido
+        </mat-error> <br>
+
+        <mat-form-field appearance="outline">		
+          <mat-label >Telefono</mat-label>
+          <input matInput type="number" required formControlName="phone">
+      </mat-form-field> 
+      <mat-error  *ngIf ="validField ('phone')">
+        completa este dato
+        </mat-error> 
+        <br>
+
+      <mat-form-field appearance="outline">		
+        <mat-label>mensaje</mat-label> 
+        <textarea matInput type="text"  required formControlName="message" style="height: 80px;"></textarea>
+     </mat-form-field>
+     <mat-error  *ngIf ="validField ('message')">
+      completa este dato
+      </mat-error> 
+      <br>
+
+    <br><br><br>
+
+    <div fxLayoutAlign="center center" fxLayoutGap="5px">
+     
+      <button  type="submit" class="btn" [ngStyle]="{'display':(clicked) ? 'none' : 'block' }" ><mat-label>Enviar</mat-label></button>
+      <button mat-button  type="button" class="btn" routerLink="/home"><mat-label>Volver</mat-label></button>
+    </div> 
+
+    </form>
+  </div>
+  </div>
+   
+</div>
+
+<div  fxFlex="50" fxLayoutAlign="center center"  [ngStyle]="{'display':(hidden) ? 'none' : 'block' }">
+  <img src="../../../assets/logo3.png" alt="" fxFlex="98%" style="border-radius: 3%;" >  
+</div>	
+
+
+</div>
+
+
+
+      
+</div>

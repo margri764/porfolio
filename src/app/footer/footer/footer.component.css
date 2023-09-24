@@ -1,0 +1,191 @@
+
+
+    .footer{
+        background-image: radial-gradient(circle at 100% 0%, #f08dff 0, #ba77ed 25%, #845ec2 50%, #534596 75%, #2a2f6f 100%);
+        width: 100vw;
+        padding: 20px;
+    }
+    
+
+    
+    .footer label{
+        font-family: "poppins";
+        font-size: 2vw;
+        color: white;
+
+    }
+
+
+
+    .feint{
+        font-family: "poppins";
+        font-size: 4vw;
+        color: #FF6F91;
+   
+    }
+    .devs{
+        font-family: "poppins";
+        font-size: 4vw;
+        color: white;
+    }
+
+
+    .cardsFooter{
+        margin-top: 50px;
+    }
+
+    mat-card{
+        background: none;
+    }
+
+    mat-card-title {
+        font-family: "poppins";
+        color: white;
+        font-size: 2.6vw;
+        line-height: 1.5em;
+    }
+
+    mat-card-content p,a{
+            font-family: "poppins";
+            font-size: 2vw;
+            color: white;
+            line-height: 2em;
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
+    }
+
+    mat-card-content p,a:hover{
+        color: rgb(199, 199, 199);
+    }
+
+    .copyrigth #feint{
+        font-family: "poppins";
+        font-size: 2vw;
+        color: #FF6F91;
+   
+    }
+    .copyrigth{
+        margin-top: 30px;
+    }
+
+    .copyrigth #devs{
+        font-family: "poppins";
+        font-size: 2vw;
+        color: white;
+    }
+
+    .material-icons{
+        color: white;
+    }
+
+    .fa-whatsapp{
+        /* margin-left: 10px; */
+        font-size: 3vw;
+        color: blanchedalmond;
+    }
+
+    .fa-whatsapp:hover{   
+        color: white;
+    }
+
+    .fa-instagram{
+        font-size: 2.7vw;
+        color: blanchedalmond;
+        margin-left: 4vw;      }
+    
+      .fa-instagram:hover{
+        color: white;
+    }
+
+    .fa-facebook-f{
+        font-size: 2.7vw;
+        color: blanchedalmond;
+        margin-left: 4vw;  
+    }
+
+    .fa-facebook-f:hover{
+        color: white;
+    }
+
+@media only screen and (max-width: 573px){  
+
+    .footer{
+        height: 50vh;
+    }
+    
+    img{
+        width: 80%;
+    }
+
+
+    .devs{
+        font-size: 8vw;
+    }
+
+    .feint{
+        font-size: 8vw;
+    }
+
+    .cardsFooter{
+        margin-top: 20px;
+    }
+
+    mat-card-title p{
+        font-size: 5vw;
+        line-height: 1.5em;
+    }
+    
+    mat-card-content p,a{
+        font-size: 4vw;
+    }
+
+    .copyrigth #feint{
+        font-size: 4vw;
+   
+    }
+    .copyrigth #devs{
+        font-size: 4vw;
+    }
+
+    .fa-whatsapp{
+        font-size: 8vw;     
+    }
+
+    .fa-instagram{
+        font-size: 8vw;     
+    }
+    
+    .fa-facebook-f{
+        font-size: 8vw;
+    }
+  
+ 
+
+}
+
+@media only screen and (min-width: 574px)and (max-width: 767px){
+
+}
+
+@media only screen and (min-width: 768px)and (max-width: 1280px) {
+    
+    .copyrigth{
+        margin-top: 80px;
+    }
+
+}
+@media only screen and (min-width: 1281px) and (max-width: 1650px) {
+    
+    .footer{
+        height: 40vw;
+    }
+
+        mat-card-content p{
+        font-size: 1.2vw;
+    }
+
+
+ 
+
+
+}
