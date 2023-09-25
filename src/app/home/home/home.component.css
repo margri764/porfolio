@@ -43,18 +43,44 @@ mat-card-content p{
 .grayScaleImg{
     filter: grayscale(100%);
 }
+
+.fa-whatsapp{
+    font-size: 4em;
+    transition: all 0.3s ease 0s;
+}
  
+.fa-instagram{
+    font-size: 3.2em;
+    transition: all 0.3s ease 0s;
+}
+
+.fa-facebook-f{
+    font-size: 3.2em;
+    transition: all 0.3s ease 0s;
+}
+
 @media only screen and (max-width: 573px){  
 
     .text{
-         font-size: 4.5vw;
-         line-height: 6vw;
+         font-size: 2em;
+         line-height: 30px;
     }
 
-    .text2{
-        font-size: 4.5vw;
-        line-height: 6vw;
-   }
+    .fa-whatsapp{
+        font-size: 3.2em;
+        transition: all 0.3s ease 0s;
+    }
+
+    .fa-instagram{
+        font-size: 3.4em;
+        transition: all 0.3s ease 0s;
+    }
+
+    .fa-facebook-f{
+        font-size: 3.2em;
+        transition: all 0.3s ease 0s;
+    }
+    
 
    mat-card-title {
        font-size: 5vw;
@@ -66,46 +92,24 @@ mat-card-content p{
         line-height: 10vw;
    }
 
-    #mongo{
-        width: 30vw;
-    }
-    #angular{
-        width: 30vw;
-    }
-    #node{
-        width: 30vw;
+
+    mat-icon{
+        transform: scale(2);
     }
    
 }
 
-@media only screen and (min-width: 574px)and (max-width: 767px){
+@media only screen and (min-width: 800px){
 
 }
 
-@media only screen and (min-width: 768px)and (max-width: 1280px) {
+@media only screen and (min-width: 1200px) {
 
-    #mongo{
-        width: 18vw;
-    }
-    #angular{
-        width: 18vw;
-    }
-    #node{
-        width: 18vw;
-    }
+ 
 
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1400px) {
     
-    #mongo{
-        width: 15vw;
-    }
-    #angular{
-        width: 15vw;
-    }
-    #node{
-        width: 15vw;
-    }
-
+   
 }
