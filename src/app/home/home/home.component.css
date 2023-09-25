@@ -101,6 +101,44 @@ mat-card-content p{
 
 @media only screen and (min-width: 800px){
 
+    
+    .text{
+        font-size: 2em;
+        line-height: 30px;
+   }
+
+   .fa-whatsapp{
+       font-size: 3.2em;
+       transition: all 0.3s ease 0s;
+   }
+
+   .fa-instagram{
+       font-size: 3.4em;
+       transition: all 0.3s ease 0s;
+   }
+
+   .fa-facebook-f{
+       font-size: 3.2em;
+       transition: all 0.3s ease 0s;
+   }
+   
+
+  mat-card-title {
+      font-size: 5vw;
+      text-align: center;
+  }
+
+  mat-card-content p{
+       font-size: 6vw;
+       line-height: 10vw;
+  }
+
+
+   mat-icon{
+       transform: scale(2);
+   }
+  
+
 }
 
 @media only screen and (min-width: 1200px) {
