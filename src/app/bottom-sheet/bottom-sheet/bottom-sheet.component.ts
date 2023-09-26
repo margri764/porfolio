@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { catchError } from 'rxjs';
+import { GenericErrorComponent } from 'src/app/generic-error/generic-error/generic-error.component';
+import { GenericSuccessComponent } from 'src/app/generic-success/generic-success/generic-success.component';
 import { CardsService } from 'src/app/services/cards.service';
 import { ValidatorService } from 'src/app/services/validator.service';
 
@@ -23,9 +26,8 @@ export class BottomSheetComponent implements OnInit {
   
   
   myForm:FormGroup = this.fb.group({
-  name:    ['', [Validators.required]],
   email:   ['', [Validators.required,Validators.pattern( this.validatorservice.emailPattern)]],
-  phone:   ['', [Validators.required]],
+
   message :['']
   });
   
@@ -34,9 +36,9 @@ export class BottomSheetComponent implements OnInit {
     constructor(
                 private cardService: CardsService,
                 private validatorservice : ValidatorService,
-                private router : Router,
                 private fb : FormBuilder,
                 private _bottomSheet: MatBottomSheet,
+                private dialog : MatDialog
     ) { 
   
     }
@@ -50,10 +52,13 @@ export class BottomSheetComponent implements OnInit {
     
   
     ngOnInit(): void {
+
    
       if(screen.width > 300 && screen.width < 574){
       this.hidden = true;
       }
+
+      this.cardService.closeBottomSheet$.subscribe( (emmited)=>{ if(emmited){this.close()} })
   
   
     }
@@ -63,24 +68,73 @@ export class BottomSheetComponent implements OnInit {
     }
   
     
-      sendForm (){
-        // if ( this.myForm.invalid ) {
-        //   this.myForm.markAllAsTouched();
-        //   return;
-        // }
-       
-        this.showSpinner = true;
-        console.log("form value", this.myForm.value)
+    sendForm() {
+      if (this.myForm.invalid) {
+        this.myForm.markAllAsTouched();
+        return;
+      }
     
-          this.cardService.sendMessage(this.myForm.value).subscribe( (res) => {
-              if (res=='true') {
-                alert('Mensaje Enviado correctamente!!')
-                  this.clicked = true;
-                  this.showSpinner = false;
-                  this.myForm.reset();
-         
-             }
-            })    
-                
-     }
+      this.showSpinner = true;
+    
+      this.cardService.sendMessage(this.myForm.value)
+        .pipe(
+          catchError(error => {
+            console.error('Ocurrió un error al enviar el mensaje:', error);
+            this.showSpinner = false;
+            this.openGenericError();
+
+            // Aquí puedes realizar acciones adicionales si lo deseas, como mostrar un mensaje de error.
+            return [];
+          })
+        )
+        .subscribe((res) => {
+          if (res === 'true') {
+            this.clicked = true;
+            this.showSpinner = false;
+            this.myForm.reset();
+            this.openGenericSuccess();
+          }
+        });
+    }
+
+
+    openGenericError(){
+
+      let width : string = '';
+      let height : string = '';
+  
+      if(screen.width >= 800) {
+        width = "400px"
+        height ="500px";
+      }
+      this.dialog.open(GenericErrorComponent, {
+        width: `${width}`|| "",
+        height:`${height}`|| "",
+        disableClose: true,
+        panelClass:"custom-modalbox-NoMoreComponent", 
+      });
+    
+    }
+
+    openGenericSuccess(){
+
+      let width : string = '';
+      let height : string = '';
+  
+      if(screen.width >= 800) {
+        width = "400px"
+        height ="500px";
+      }
+      this.dialog.open(GenericSuccessComponent, {
+        width: `${width}`|| "",
+        height:`${height}`|| "",
+        disableClose: true,
+        panelClass:"custom-modalbox-NoMoreComponent", 
+      });
+    
+    }
+  
+  
+    
+    
   }

@@ -1,6 +1,6 @@
 
 
-<div fxLayout="row wrap" fxLayoutAlign="center center" class="animate__animated animate__fadeIn" fxFlex="100" >
+<div fxLayout="row wrap" fxLayoutAlign="center center" class="animate__animated animate__fadeIn" style="height: 400px;" >
 
   
         
@@ -19,16 +19,16 @@
       <form  [formGroup]="myForm"  id="form" >     
   
   
-        <mat-form-field appearance="outline">		
-            <mat-label >email</mat-label>
-            <input matInput type="email" required formControlName="email">
+        <mat-form-field appearance="outline" class="font" style="font-size: 1em;">		
+            <mat-label style="font-size: 1.3em;">email</mat-label>
+            <input matInput type="email" required formControlName="email" >
         </mat-form-field> 
         <mat-error  *ngIf ="validField ('email')" class="font"> Completa este dato / no es un formato de email valido</mat-error> 
   
        
   
-        <mat-form-field appearance="outline">		
-          <mat-label>mensaje</mat-label> 
+        <mat-form-field appearance="outline" class="font" >		
+          <mat-label style="font-size: 1.3em;">mensaje</mat-label> 
           <textarea matInput type="text"  required formControlName="message" style="height: 80px;"></textarea>
        </mat-form-field>
        <mat-error  *ngIf ="validField ('message')" class="font"> Completa este dato </mat-error> 

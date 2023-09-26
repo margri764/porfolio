@@ -15,6 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet/bottom-sheet.component';
 import { HeaderComponent } from './header/header/header.component';
+import { GenericSuccessComponent } from './generic-success/generic-success/generic-success.component';
+import { GenericErrorComponent } from './generic-error/generic-error/generic-error.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { HeaderComponent } from './header/header/header.component';
     SidebarComponent,
     ContactUsComponent,
     BottomSheetComponent,
-    HeaderComponent
+    HeaderComponent,
+    GenericSuccessComponent,
+    GenericErrorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 
 export class CardsService {
   
+  closeBottomSheet$ : EventEmitter<boolean> = new EventEmitter<boolean>;
 
   private baseUrl: string = environment.baseUrl;
   
