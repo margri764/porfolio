@@ -13,12 +13,14 @@ export class HomeComponent implements OnInit {
   featuresCards : any= [];
   imgWidth : any;
   readMore : boolean = false;
+  phone : boolean = false;
 
   constructor(
               private _card : CardsService,
               private router : Router
   ) { 
     this.featuresCards = this._card.getCards();
+    (screen.width <= 800 ? this.phone = true : this.phone = false)
  
 
   }
@@ -37,9 +39,9 @@ export class HomeComponent implements OnInit {
 
 
     switch( value ) {
-      case 'whatsapp' :
-                  (window as any).open('https://wa.me/+542302690139?text=Hola!!%20', "_blank");
-       break;
+      // case 'whatsapp' :
+      //             (window as any).open('https://wa.me/+542302690139?text=Hola!!%20', "_blank");
+      //  break;
       
       case 'gps': 
                   (window as any).open('https://goo.gl/maps/3fDrcSniMPY9TkQE9', "_blank");
@@ -50,6 +52,12 @@ export class HomeComponent implements OnInit {
                  window.open('https://wa.me/+542302623444?text=Hola necesito información%20', '_blank');
           
      break;
+
+     case 'linkedin': 
+                window.open('https://www.linkedin.com/in/marcelo-griotti-a78875169/', '_blank');
+
+    break;
+
      
      case 'email': 
                 this.router.navigateByUrl('/contact-us')

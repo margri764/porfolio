@@ -1,4 +1,3 @@
-
 .text{
     font-family: 'Poppins', sans-serif;
     font-size: 2vw;
@@ -7,18 +6,6 @@
     padding: 10px;
     line-height: 4vw;
 }
-
-.text2{
-    font-family: 'Nunito Sans', sans-serif;
-    font-stretch: expanded;
-    font-size: 2vw;
-    color: blanchedalmond;
-    text-align: center;
-    padding: 10px;
-    line-height: 4vw;
-}
-
-
 
 mat-card-title{
     font-family: 'Poppins', 'sans-serif'; 
@@ -30,15 +17,6 @@ mat-card-content p{
     line-height: 4vw;
    }
 
-#mongo{
-    width: 20vw;
-}
-#angular{
-    width: 20vw;
-}
-#node{
-    width: 20vw;
-}
 
 .grayScaleImg{
     filter: grayscale(100%);
@@ -142,6 +120,31 @@ mat-card-content p{
 }
 
 @media only screen and (min-width: 1200px) {
+
+    .text{
+        font-size: 2em;
+        line-height: 30px;
+   }
+
+   .fa-whatsapp{
+       font-size: 2.5em;
+       transition: all 0.3s ease 0s;
+   }
+
+   .fa-instagram{
+       font-size: 2.5em;
+       transition: all 0.3s ease 0s;
+   }
+
+   .fa-facebook-f{
+       font-size: 2.5em;
+       transition: all 0.3s ease 0s;
+   }
+
+   mat-icon{
+    transform: scale(1.7);
+   }
+
 
  
 

@@ -12,34 +12,34 @@
             </div>
             
             <div fxLayout="row wrap" fxLayoutAlign="end center" fxFlex="30" class=" animate__animated animate__backInDown">         
-                <button mat-icon-button  (click)="showToolbar()" >
-                    <mat-icon >menu</mat-icon>
+                <button mat-icon-button  [matMenuTriggerFor]="menu" >
+                    <mat-icon >more_vert</mat-icon>
                 </button>           
             </div>
+
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                        <span class="material-icons notranslate" style="color: rgb(1, 0, 14); ">download</span>
+                        &nbsp;
+                      <a href="assets/cv-ing_griotti.pdf" download style="color: rgb(33, 33, 33); text-decoration: none ;">
+                       Curriculum
+                      </a>
+                  </button>
+
+              </mat-menu>
             
         </div>
 
 
         <div fxLayout="row wrap"  fxLayoutAlign="space-between center"  fxFlex="100" class="contentHeader" >
-            <!-- <div fxFlex="20"  fxFlex.lg="15"fxFlex.sm="30"> -->
-
                     
                     <div fxLayout="row wrap"  fxLayoutAlign="center"  fxFlex="100">
                         <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; line-height: 30px;">Hola, soy Ing. de Sistemas </span>  
-                        <span  class="content" style="text-align: start;"> Y hago desarrollo de software...</span>  
+                        <span  class="content" style="text-align: start; margin-top: 18px;"> Y hago software...</span>  
 
                         <span  class="font textHeader" >¡Hola! Mi nombre es Marcelo Griotti, y soy un apasionado ingeniero de sistemas con una especialización en desarrollo de software fullstack. A lo largo de casi 5 años en mi carrera, he tenido la oportunidad de trabajar en una amplia variedad de proyectos emocionantes y desafiantes que han contribuido a mi crecimiento y desarrollo como profesional de la tecnología.
                          </span>  
                     </div>    
-                    
-                        
-
-                <div fxLayout="row wrap"  fxLayoutAlign="end center" fxFlex="50"  >
-                    <!-- <img fxFlex="80%" src="../../../assets/logo2.gif"  > -->
-                </div>
-                
-
-
             
         </div>
    </div>

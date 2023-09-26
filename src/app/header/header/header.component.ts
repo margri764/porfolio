@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { MatDialog } from '@angular/material/dialog';
+import { BottomSheetComponent } from 'src/app/bottom-sheet/bottom-sheet/bottom-sheet.component';
 import { ContactUsComponent } from 'src/app/contactUs/contact-us/contact-us.component';
-import { SidebarComponent } from 'src/app/sidebar/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-header',
@@ -10,24 +11,16 @@ import { SidebarComponent } from 'src/app/sidebar/sidebar/sidebar.component';
 })
 export class HeaderComponent implements OnInit {
 
-  show:boolean= true;
   
   constructor(
-    public dialog: MatDialog
+                private _bottomSheet: MatBottomSheet
   ) { }
 
   ngOnInit(): void {
   }
 
-  showToolbar(){
-    this.show= !this.show
 
-}
-openDialog() {
-  const dialogRef = this.dialog.open(ContactUsComponent);
-
-  dialogRef.afterClosed().subscribe(result => {
-    console.log(`Dialog result: ${result}`);
-  });
+openBottomSheet() {
+  this._bottomSheet.open(BottomSheetComponent);
 }
 }

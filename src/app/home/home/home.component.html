@@ -4,7 +4,7 @@
        <p class="text" style="margin-top: 40px; margin-bottom: 40px;"> Soy senior en el siguiente stack de tecnologías </p>
       
        <!-- stack -->
-      <div fxLayout="row wrap"  fxLayoutAlign="space-between space-between" fxFlex="100" style="background:rgb(252, 242, 228); margin-bottom: 40px;  padding: 5px; height: 250px;">
+      <div fxLayout="row wrap"  fxLayoutAlign="space-between space-between" fxFlex="100" style="background:rgb(252, 242, 228); margin-bottom: 40px; height: 400px; padding: 30px; ;">
 
          <div fxFlex="20" fxFlex.xs="30" fxFlex.sm="25" fxLayoutAlign="center center">
             <img src="assets/angular.png" id="angular" class="grayScaleImg" fxFlex.xs="100" fxFlex.sm="100" fxFlex="50"  > 
@@ -75,82 +75,93 @@
       <p class="text" style="margin-top: 40px; margin-bottom: 40px;"> Algo de mi trabajo como freelance... </p>
 
       <!-- portfolio -->
-      <div fxLayout="row wrap"  fxLayoutAlign="center center"  style=" margin-bottom: 40px; ">
+      <div fxLayout="row wrap"  fxLayoutAlign="center center"  style=" margin-bottom: 40px; margin-top: 60px;">
 
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" style="padding: 5px;">
+            <!-- food -->
+            <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" style="padding: 10px;">
 
-               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; line-height: 30px;">Food App </span>  
+               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; ">Food App </span>  
 
-                <span class="font" style="font-size: 1.2em; color: white; margin-top: 10px; width: 100%;"> Food App es una PWA construida íntegramente con  el mejor stack de tecnologías. Permite hacer pedidos de comidas, delivery por geolocalizacion, panel de administracion y mucho mas... (Por el momento solo es responsiva para celulares)</span>
+               <div fxLayout="row wrap" fxLayoutAlign="space-between start" fxFlex="100" style="padding: 5px;">
 
-                <span class="material-icons notranslate" style="text-align: end; width: 100%; color: white; margin-top: 15px; margin-bottom: 51px;" (click)="keepReading()" *ngIf="readMore">close</span>
+                 <div fxLayout="row wrap" fxLayoutAlign="space-between start"  fxFlex.xs="100"  fxFlex.sm="100" fxFlex="50" style="padding: 0px">
 
-                <p class="font" style="font-size: 1.3em; color: white; margin-top: 10px; line-height: 25px;" *ngIf="readMore"> <b>Características Destacadas:</b> &nbsp;<br>
-
-                  <b>Geolocalización en Tiempo Real para Entregas Rápidas: </b> &nbsp;Con nuestra avanzada tecnología de geolocalización, puedes realizar un seguimiento en tiempo real de tu pedido y saber exactamente cuándo llegará a tu puerta. ¡Di adiós a la incertidumbre de la entrega! <br>
+                     <span class="font" style="font-size: 1.2em; color: white; margin-top: 20px; line-height: 30px; text-align: start;" fxLayout="row wrap" fxFlex="100"> Food App es una PWA construida con el stack completo de tecnologías, incluye una base de datos no relacional. Permite hacer pedidos de comidas, delivery por geolocalizacion, panel de administracion, geolocalización en tiempo real para entregas rápidas, seguimiento de estado del pedido,  panel de administrador.  Nuestra plataforma también incluye un potente panel de administrador que permite a los propietarios de restaurantes y gerentes de establecimientos realizar operaciones CRUD (Crear, Leer, Actualizar y Borrar) de clientes, personal de entrega, pedidos, productos y categorías de productos.Pausar temporalmente la aplicación cuando sea necesario para gestionar la demanda o realizar mantenimiento.
+                     <b style="font-style: italic;"> (Por el momento solo es responsiva para celulares)</b>
+                     </span>
+                     <a href="www.fooodapp.shop" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; color: #ffe222; margin-bottom: 20px;" > Navegar al sitio </a>
+                 </div>
+                     
                   
-                  <b>Plataforma de Pago Seguro:</b> &nbsp; Hemos implementado una plataforma de pago segura que garantiza que tus transacciones sean rápidas, convenientes y, lo más importante, seguras. Aceptamos múltiples métodos de pago para tu comodidad.
-                  <br>
-                  <b>Seguimiento de Estado del Pedido:</b> &nbsp; Nunca te preguntarás "¿Dónde está mi pedido?" Nuestra aplicación te permite realizar un seguimiento en tiempo real del estado de tu pedido, desde la preparación en la cocina hasta la entrega en tu puerta.
-                  <br>
-                  <b>Personalización de Pedidos: </b> ¿Eres un amante de la comida con preferencias únicas? ¡Estás de suerte! Puedes personalizar tus pedidos según tus gustos personales, desde ingredientes adicionales hasta restricciones dietéticas.
-                  <br>
-                  <b>Ofertas y Promociones Especiales:</b> &nbsp; Mantente al tanto de las ofertas y promociones exclusivas que ofrecemos regularmente. ¡Ahorra en tus comidas favoritas!
-                  <br>
-                  <b>Panel de Administrador:</b> &nbsp; Nuestra plataforma también incluye un potente panel de administrador que permite a los propietarios de restaurantes y gerentes de establecimientos:
+                  <img src="assets/food-banner.png" alt="food app" fxFlex.xs="100" fxFlex.sm="60" fxFlex="35" style="margin-top: 5px;">
                   
-                  Realizar operaciones CRUD (Crear, Leer, Actualizar y Borrar) de clientes, personal de entrega, pedidos, productos y categorías de productos.
-                  
-                  Pausar temporalmente la aplicación cuando sea necesario para gestionar la demanda o realizar mantenimiento.
-                  
-                  Gestionar horarios de atención para garantizar una experiencia de pedido fluida.
-                  
-                  Crear y gestionar ofertas especiales y promociones para atraer a más clientes.</p>
-
-                <span class="font" style="font-size: 1.2em; margin-top: 10px; text-align: start; width: 100%; color: #ffe222;" (click)="keepReading()" *ngIf="!readMore"> seguir leyendo... </span>
-
-                <span class="material-icons notranslate" style="text-align: end; width: 100%; color: white; margin-top: 15px; margin-bottom: 15px;" (click)="keepReading()" *ngIf="readMore">close</span>
-               <img src="assets/food-banner.png" alt="food app" fxFlex.xs="100" style="margin-top: 5px;">
-
-               <a href="www.fooodapp.shop" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; width: 100%; color: #ffe222;" > Navegar al sitio </a>
+               </div>
+     
             </div>
+            <!-- end food -->
 
+            <!-- gestion -->
+            <div fxLayout="row wrap" fxLayoutAlign="center start" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" style="padding: 10px; margin-top: 100px;">
+               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91;margin-bottom: 50px; ">Gestion App</span>  
 
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" style="padding: 5px; margin-top: 30px;">
-               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; line-height: 30px;">Gestion App</span>  
-                <p class="font" style="font-size: 1.2em; color: white; margin-top: 10px;"> Gestion App es una PWA que permite gestionar la toma de pedidos de vendedores, tambien ofrece una amplia gama de opciones en gestion de artículos, clientes, estados de pedidos, etc</p>
+               <img src="assets/gestion-banner.jpg" alt="banner gestion" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="65">
 
-                <span class="material-icons notranslate" style="text-align: end; width: 100%; color: white; margin-top: 15px; margin-bottom: 15px;" (click)="keepReading()" *ngIf="readMore">close</span>
-                <img src="assets/gestion-banner.jpg" alt="food app" fxFlex.xs="100"  fxFlex.sm="100">
-                <a href="https://gestion.feintdevs.com/home" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; width: 100%; color: #22b2ff;" > Navegar al sitio </a>
+               <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="35" style="padding: 5px; ">
+                  <span  fxLayout="row wrap"  fxLayoutAlign="end start"  fxFlex.xs="100" fxFlex.sm="100" fxFlex="80" class="font" style="font-size: 1.2em; color: white; text-align: justify; line-height: 30px;"> Gestion App es una PWA que permite gestionar la toma de pedidos de vendedores, tambien ofrece una amplia gama de opciones en gestion de artículos, clientes, estados de pedidos, etc</span>
+
+                  <a href="https://gestion.feintdevs.com/home" target="_blank" fxLayout="row wrap"  fxLayoutAlign="start start"  fxFlex.xs="100" fxFlex.sm="100" fxFlex="80"  class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; color: #22b2ff;" > Navegar al sitio </a>
+               </div>   
             
             </div>
+            <!-- emd gestion -->
 
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" style="padding: 5px; margin-top: 30px;">
-               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; line-height: 30px;">M3D  </span>  
-                <p class="font" style="font-size: 1.2em; color: white; margin-top: 10px;"> M3D es una web app que se encarga de ofrecer servicios de diseño e impresión 3d. Stack: Angular + Ang Material</p>
-          
+            <!-- m3d -->
+            <div fxLayout="row wrap" fxLayoutAlign="center start" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" style="padding: 5px; margin-top: 100px;">
 
+               <div fxLayout="row wrap" fxLayoutAlign="start start" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="30" >
+
+                  <span  fxFlex="50" class="font" style="font-size: 2em; color: #FF6F91; text-align: start; margin-bottom: 30px;" >M3D  </span>  
+
+                  <span fxLayout="row wrap" fxLayoutAlign="center start" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" class="font" style="font-size: 1.2em; color: white; margin-top: 10px; text-align: justify;"> M3D es una web app para ofrecer servicios de diseño e impresión 3d. Diseño simple, con sliders para ofrecer los productos y servicios para el hogar y la industria. </span>
+                  <a href="https://m3d-realico.com" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; width: 100%; color: #ff8522;" > Navegar al sitio </a>
+               </div>   
             
-                <img src="assets/m3d-banner.jpg" alt="food app" fxFlex="100" style="margin-top: 10px;">
-                <a href="https://m3d-realico.com" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; width: 100%; color: #ff8522;" > Navegar al sitio </a>
+                <img src="assets/m3d-banner.jpg" alt="food app" fxFlex.xs="100" fxFlex.sm="100" fxFlex="70" style="margin-top: 10px;">
             </div>
+            <!-- end m3d -->
 
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" style="padding: 5px; margin-top: 30px;">
-               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; line-height: 30px;">Revimack Agro  </span>  
-               <p class="font" style="font-size: 1.2em; color: white; margin-top: 10px;"> Revimack Agro es una pagina web responsiva donde se ofrecen maquinaria e implementos agropecuarios, el sitio esta codificado con metatags y estrategias de Google Ads para recolectar información que se utiliza en campañas de marketing digital</p>
-            
-               <img src="assets/revimack-banner.jpg" alt="food app" fxFlex="100" style="margin-top: 10px;">
-                <a href="https://revimackagro.com" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; width: 100%; color: green;" > Navegar al sitio </a>
-            </div>
+             <!-- revimack -->
+            <div fxLayout="row wrap" fxLayoutAlign="center start" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" style="padding: 5px; margin-top: 100px;">
+              
+               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; margin-bottom: 30px;">Revimack Agro </span>  
 
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" style="padding: 5px; margin-top: 30px;">
-               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; line-height: 30px;">EPET N°6  </span>  
-               <p class="font" style="font-size: 1.2em; color: white; margin-top: 10px;"> EPET 6 es un sitio web simple en html + javascript que es utilizado por la institución educativa homónima, para informar a sus alumnos y/o padres. </p>
+               <img src="assets/revimack-banner.jpg" alt="revimack app" fxFlex.xs="100" fxFlex.sm="100" fxFlex="65" style="margin-top: 10px;">
+                  
+               <div fxLayout="row wrap" fxLayoutAlign="center start" fxFlex.xs="100" fxFlex.sm="100" fxFlex="35" style="padding: 5px;">
+
+                  <span fxLayout="row wrap" fxLayoutAlign="end center" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" class="font" style="font-size: 1.2em; color: white; text-align: justify;"> Revimack Agro es una pagina web responsiva donde se ofrecen maquinaria e implementos agropecuarios, el sitio esta codificado con metatags y estrategias de Google Ads para recolectar información que se utiliza en campañas de marketing digital</span>
+                  <a fxLayout="row wrap" fxLayoutAlign="start center" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" href="https://revimackagro.com" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; color: green;" > Navegar al sitio </a>
+               </div>   
+           
+               </div>
+            <!-- end revimack -->
+
+            <!-- epet -->
+            <div fxLayout="row wrap" fxLayoutAlign="start start" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" style="padding: 5px; margin-top: 100px;">
+
+               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; margin-bottom: 30px;">EPET N°6  </span>  
+
+               <div fxLayout="row wrap" fxLayoutAlign="start start" fxFlex.xs="100" fxFlex.sm="100" fxFlex="30" style="padding: 0px;">
+
+                  <span fxLayout="row wrap" fxLayoutAlign="start center" fxFlex.xs="100"  fxFlex.sm="94" fxFlex="94" class="font" style="font-size: 1.2em; color: white; text-align: justify;"> EPET 6 es un sitio web simple en html + javascript que es utilizado por la institución educativa homónima, para mantener informados a sus alumnos y/o padres. </span>
+                  <a fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="100"  href="http://epet6realico.edu.ar/" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; width: 100%; color: rgb(255, 255, 238);" > Navegar al sitio </a>
+
+              </div>   
             
-               <img src="assets/epet-banner.jpg" alt="food app" fxFlex="100" style="margin-top: 10px;">
-                <a href="http://epet6realico.edu.ar/" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; width: 100%; color: rgb(255, 255, 238);" > Navegar al sitio </a>
+               <img src="assets/epet-banner.jpg" alt="food app" fxFlex.xs="100" fxFlex.sm="100" fxFlex="65"  style="margin-top: 10px;">
+
             </div>
+            <!-- end epet -->
 
 
      </div>
@@ -159,34 +170,57 @@
 
      <p class="text" style="margin-top: 40px; margin-bottom: 30px;"> Nos ponemos en contacto? </p>
 
-     <div fxLayout="row wrap"  fxLayoutAlign="space-between center" fxFlex="100" style="background:rgb(252, 242, 228); margin-bottom: 0px;  height: 120px;" >
+
    
-      
-         <div fxLayout="row wrap"  fxLayoutAlign="center center"  fxFlex="20" >
-            <a href="https://wa.me/+542302416035?text=Hola!!%20" target="blank" (click)="goToUrl('cel')" style="color: black;"  >
-               <i class="fab fa-whatsapp " ></i>
-            </a>
-         </div>
+     <div fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="100" style="background:rgb(252, 242, 228); margin-bottom: 0px;  height: 120px;" >
 
-
-         <div fxLayout="row wrap"  fxLayoutAlign="center center"  fxFlex="20" >
-            <button mat-icon-button (click)="goToUrl('email')" class="example-icon" >
-               <mat-icon>email</mat-icon>
-            </button>
-         </div>
-
+      <div fxLayout="row wrap"  fxLayoutAlign="space-between center" fxFlex="85" >
          
-         <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="20" >
-            <a  href="https://www.instagram.com/feintdevs/" target="blank" style="color: black;" > 
-            <i class="fab fa-instagram" ></i>
-            </a>
+            <div fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="40" *ngIf="!phone" >
+               <span class="material-icons notranslate" style="text-align: end;"> copyright </span> &nbsp;
+               <span class="font" style="font-size: 1.2em; text-align: start;" fxFlex="90"> Feint dEvs 2019. Todos los derechos reservados. </span>
+            </div>   
+
+            <div fxLayout="row wrap"  fxLayoutAlign="center center"  fxFlex.xs="16" fxFlex="10">
+               <a href="https://wa.me/+542302416035?text=Hola!!%20" target="blank" (click)="goToUrl('cel')" style="color: black;"  >
+                  <i class="fab fa-whatsapp " ></i>
+               </a>
+            </div>
+
+            <div fxLayout="row wrap"  fxLayoutAlign="center center"  fxFlex.xs="16" fxFlex="10">
+                  <img src="assets/linkedin-bg.png" alt="linkedin" fxFlex.xs="55" fxFlex.sm="55" fxFlex="35" style=" filter: brightness(0);"  (click)="goToUrl('linkedin')">
+            </div>
+
+
+            <div fxLayout="row wrap"  fxLayoutAlign="center center"  fxFlex.xs="16" fxFlex="10">
+               <button mat-icon-button (click)="goToUrl('email')" class="example-icon" >
+                  <mat-icon>email</mat-icon>
+               </button>
+            </div>
+
+            
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="16" fxFlex="10">
+               <a  href="https://www.instagram.com/feintdevs/" target="blank" style="color: black;" > 
+               <i class="fab fa-instagram" ></i>
+               </a>
+            </div>
+
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="16" fxFlex="10">
+               <a  href="https://www.facebook.com/?locale=es_LA" target="_blank" style="color: black;">
+               <i class="fab fa-facebook-f" ></i>
+               </a>
+            </div>
+
+            <div fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex.xs="16" fxFlex="10" >
+
+               <a href="assets/cv-ing_griotti.pdf" download >
+                <span class="material-icons notranslate" style="color:rgb(1, 0, 14); transform: scale(1.7);"> download </span> 
+              </a>
+            </div>   
+       
+
          </div>
 
-         <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="20">
-            <a  href="https://www.facebook.com/?locale=es_LA" target="_blank" style="color: black;">
-            <i class="fab fa-facebook-f" ></i>
-            </a>
-         </div>
 
    </div>
 
