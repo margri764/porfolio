@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://feintdevs/'
+  baseUrl: 'http://localhost:8000/'
 };
 
 /*

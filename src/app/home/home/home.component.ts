@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Router } from '@angular/router';
 import { faLastfmSquare } from '@fortawesome/free-brands-svg-icons';
+import { BottomSheetComponent } from 'src/app/bottom-sheet/bottom-sheet/bottom-sheet.component';
 import { CardsService } from 'src/app/services/cards.service';
 
 @Component({
@@ -17,9 +19,9 @@ export class HomeComponent implements OnInit {
 
   constructor(
               private _card : CardsService,
-              private router : Router
-  ) { 
-    this.featuresCards = this._card.getCards();
+              private _bottomSheet: MatBottomSheet
+  ) 
+  { 
     (screen.width <= 800 ? this.phone = true : this.phone = false)
  
 
@@ -59,12 +61,13 @@ export class HomeComponent implements OnInit {
     break;
 
      
-     case 'email': 
-                this.router.navigateByUrl('/contact-us')
-     break;
   
     }
 
+  }
+
+  openBottomSheet() {
+    this._bottomSheet.open(BottomSheetComponent);
   }
 
 }

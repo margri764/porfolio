@@ -86,10 +86,10 @@
 
                  <div fxLayout="row wrap" fxLayoutAlign="space-between start"  fxFlex.xs="100"  fxFlex.sm="100" fxFlex="50" style="padding: 0px">
 
-                     <span class="font" style="font-size: 1.2em; color: white; margin-top: 20px; line-height: 30px; text-align: start;" fxLayout="row wrap" fxFlex="100"> Food App es una PWA construida con el stack completo de tecnologías, incluye una base de datos no relacional. Permite hacer pedidos de comidas, delivery por geolocalizacion, panel de administracion, geolocalización en tiempo real para entregas rápidas, seguimiento de estado del pedido,  panel de administrador.  Nuestra plataforma también incluye un potente panel de administrador que permite a los propietarios de restaurantes y gerentes de establecimientos realizar operaciones CRUD (Crear, Leer, Actualizar y Borrar) de clientes, personal de entrega, pedidos, productos y categorías de productos.Pausar temporalmente la aplicación cuando sea necesario para gestionar la demanda o realizar mantenimiento.
+                     <span class="font" style="font-size: 1.2em; color: white; margin-top: 20px; line-height: 30px; text-align: start;" fxLayout="row wrap" fxFlex="100"> Food App es una PWA construida con el stack MEAN y las mejores prácticas de programación, incluye una base de datos no relacional. Permite hacer pedidos de comidas, delivery por geolocalizacion, panel de administracion, geolocalización en tiempo real para entregas rápidas, seguimiento de estado del pedido... Nuestra plataforma también incluye un potente panel de administrador que permite a los propietarios de restaurantes y gerentes de establecimientos, Crear, Leer, Actualizar y Borrar  clientes, personal de entrega, pedidos, productos y categorías de productos.Pausar temporalmente la aplicación cuando sea necesario para gestionar la demanda o realizar mantenimiento, entre otras funcionalidades.
                      <b style="font-style: italic;"> (Por el momento solo es responsiva para celulares)</b>
                      </span>
-                     <a href="www.fooodapp.shop" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; color: #ffe222; margin-bottom: 20px;" > Navegar al sitio </a>
+                     <a href="https://fooodapp.shop/home" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; color: #ffe222; margin-bottom: 20px;" > Navegar al sitio </a>
                  </div>
                      
                   
@@ -163,6 +163,24 @@
             </div>
             <!-- end epet -->
 
+            <!-- infomatrix -->
+            <div fxLayout="row wrap" fxLayoutAlign="center start" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" style="padding: 5px; margin-top: 100px;">
+         
+               <span  class="font" style="font-size: 2em; text-align: start; width: 100%; color: #FF6F91; margin-bottom: 30px;">Infomatrix Argentina </span>  
+
+               <img src="assets/infomatrix-banner.jpg" alt="infomatrix" fxFlex.xs="100" fxFlex.sm="100" fxFlex="65" style="margin-top: 10px;">
+                  
+               <div fxLayout="row wrap" fxLayoutAlign="center start" fxFlex.xs="100" fxFlex.sm="100" fxFlex="35" style="padding: 5px;">
+
+                  <span fxLayout="row wrap" fxLayoutAlign="end center" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" class="font" style="font-size: 1.2em; color: white; text-align: justify;"> Infomatrix Argentina es un sitio web creado para informar acerca de la muestra internacional de ciencia y tecnología que en el 2023 se desarrolla en Argentina. Esta construido con angular y bootstrap, ademas consta de un servidor en el back hecho en node + express, para registrar en base de datos las inscripciones a las distintas conferencias y acceder a las mismas desde el front. </span>
+                  <a fxLayout="row wrap" fxLayoutAlign="start center" fxFlex.xs="100"  fxFlex.sm="100" fxFlex="85" href="https://revimackagro.com" target="_blank" class="font" style="font-size: 1.2em; margin-top: 20px; text-align: start; color: rgb(9, 121, 159);" > Navegar al sitio </a>
+               </div>   
+            
+               </div>
+            <!-- end infomatrix -->
+
+            
+
 
      </div>
      <!-- end portfolio -->
@@ -188,12 +206,12 @@
             </div>
 
             <div fxLayout="row wrap"  fxLayoutAlign="center center"  fxFlex.xs="16" fxFlex="10">
-                  <img src="assets/linkedin-bg.png" alt="linkedin" fxFlex.xs="55" fxFlex.sm="55" fxFlex="35" style=" filter: brightness(0);"  (click)="goToUrl('linkedin')">
+                  <img src="assets/linkedin-bg.png" alt="linkedin" fxFlex.xs="65" fxFlex.sm="55" fxFlex="35" style=" filter: brightness(0);"  (click)="goToUrl('linkedin')">
             </div>
 
 
             <div fxLayout="row wrap"  fxLayoutAlign="center center"  fxFlex.xs="16" fxFlex="10">
-               <button mat-icon-button (click)="goToUrl('email')" class="example-icon" >
+               <button mat-icon-button (click)="openBottomSheet()" class="example-icon" >
                   <mat-icon>email</mat-icon>
                </button>
             </div>
@@ -212,7 +230,6 @@
             </div>
 
             <div fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex.xs="16" fxFlex="10" >
-
                <a href="assets/cv-ing_griotti.pdf" download >
                 <span class="material-icons notranslate" style="color:rgb(1, 0, 14); transform: scale(1.7);"> download </span> 
               </a>
